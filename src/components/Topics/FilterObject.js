@@ -47,8 +47,8 @@ class FilterObject extends Component {
             <div className="puzzleBox filterObjectPB">
                 <h4>Filter Object</h4>
                 <span className="puzzleText">Original: {JSON.stringify(this.state.unFilteredArray)}</span>
-                <input onChange={e => this.handleChange(e)} className="inputLine" />
-                <button onClick={() => this.filterObjectProp(this.state.userInput, this.state.unFilteredArray)} className="confirmationButton">Do The Thing</button>
+                <input onChange={e => this.handleChange(e)} className="inputLine" placeholder="Enter Search Key Here"/>
+                <button onClick={() => this.filterObjectProp(this.state.userInput, this.state.unFilteredArray)} className="confirmationButton">Produce The Desired Result(s)</button>
                 <span className="resultsBox filterObjectRB">Filtered: {JSON.stringify(this.state.filteredArray)}</span>
             </div>
         )

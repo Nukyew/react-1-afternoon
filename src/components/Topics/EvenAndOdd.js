@@ -39,8 +39,8 @@ class EvenAndOdd extends Component {
         return(
             <div className="puzzleBox evenAndOddPB">
                 <h4>Evens And Odds</h4>
-                <input onChange={e => this.handleChange(e)} className="inputLine" />
-                <button onClick={() => this.sortNums(this.state.userInput)} className="confirmationButton">Do The Thing</button>
+                <input onChange={e => this.handleChange(e)} className="inputLine" placeholder="Enter Numbers Here"/>
+                <button onClick={() => this.sortNums(this.state.userInput)} className="confirmationButton">ASUNDER THE NUMBERS</button>
                 <span className="resultsBox">Evens: {JSON.stringify(this.state.evenArray)}</span>
                 <span className="resultsBox">Odds: {JSON.stringify(this.state.oddArray)}</span>
             </div>

@@ -35,7 +35,7 @@ class Palindrome extends Component {
         return(
             <div className="puzzleBox palindromePB">
                 <h4>Palindrome</h4>
-                <input onChange={e => this.handleChange(e)} className="inputLine" />
+                <input onChange={e => this.handleChange(e)} className="inputLine" placeholder="Enter Palindrome Here"/>
                 <button onClick={() => this.reverseString(this.state.userInput)} className="confirmationButton">Try Me</button>
                 <span className="resultsBox">Is Palindrome: {JSON.stringify(this.state.palindrome)}</span>
             </div>
